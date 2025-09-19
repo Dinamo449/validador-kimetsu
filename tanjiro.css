@@ -1,0 +1,99 @@
+
+@import url('https://fonts.cdnfonts.com/css/blood-crow-condensed');
+
+body {
+  font-family: 'Blood Crow Condensed', sans-serif;
+  background: repeating-linear-gradient(
+    45deg,
+    #0d0d0d,
+    #0d0d0d 30px,
+    #145a32 30px,
+    #145a32 60px
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.92);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.7);
+  text-align: center;
+  width: 360px;
+  border: 6px solid #a50000;
+  transition: transform 0.2s ease, border-color 0.3s ease;
+}
+
+.logo {
+   width: 240px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 12px;
+  width: 90%;
+  margin-bottom: 15px;
+  border: 2px solid #145a32;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  background: linear-gradient(135deg, #a50000, #0d0d0d);
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.2s ease, background 0.3s ease;
+  font-weight: bold;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0d0d0d, #145a32);
+  transform: scale(1.07);
+}
+
+#resultado {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+.shake {
+  animation: shake 0.4s;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-6px); }
+  40% { transform: translateX(6px); }
+  60% { transform: translateX(-6px); }
+  80% { transform: translateX(6px); }
+  100% { transform: translateX(0); }
+}
+
+
+.pulse {
+  animation: pulse 0.5s;
+  border-color: #00cc44 !important; 
+}
+
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
